@@ -1,0 +1,119 @@
+* { margin: 0; padding: 0;}
+
+html {
+    font-size: 0.0652vw;
+}
+.body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    margin: 0 52rem 0 52rem;
+}
+
+.nav {
+    background-color: #00453DB2;
+    height: 358rem;
+}
+
+.nav__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+
+    padding-bottom: 64rem;
+    padding-top: 112rem;
+}
+
+
+.nav-item {
+    font-size: 27rem;
+    color: white;
+    text-decoration: none;
+    
+
+    position: relative;
+
+    transition: background 2s linear;
+}
+
+.nav-item::after {
+    position: absolute;
+    content: "";
+
+    width: 225rem;
+    height: 3rem;
+    border-radius: 20rem;
+    background: white;
+    
+    transition: 0.3s;
+    opacity: 0;
+
+    bottom: -18rem;
+    left: 35rem;
+}
+
+.nav-item:nth-child(2)::after {
+    left: 0rem;
+}
+.nav-item:nth-child(3)::after {
+    left: -30rem;
+}
+
+.nav-item:hover::after {
+    opacity: 1;
+}
+
+
+.nav__subitems {
+    padding-bottom: 50rem;
+}
+
+.first-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30rem;
+}
+
+.second-row {
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-subitem {
+    font-size: 20rem;
+    color: white;
+    text-decoration: none;
+
+    position: relative;
+
+    padding-bottom: 5rem;
+    margin-right: 25rem;
+
+}
+
+.nav-subitem::after {
+    position: absolute;
+    content: "";
+
+    width: 80%;
+    height: 1rem;
+
+    background: white;
+    
+    transition: 0.3s;
+    opacity: 0;
+
+    bottom: 0;
+    left: 10%;
+
+    display: inline-block;
+}
+
+
+.nav-subitem:hover::after {
+    opacity: 1;
+}
